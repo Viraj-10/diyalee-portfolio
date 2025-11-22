@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+    --font-display: "Red Hat Display", sans-serif;
+    --font-body: "Raleway", sans-serif;
+
+    --color-cream: #FFF9E5;
+    --color-yellow: #FDC435;
+    --color-yellow-hover: #E5B02A;
+    --color-dark: #111111;
+    --color-gray: #828282;
+
+    --color-accent-purple: #E7A5E5;
+    --color-accent-blue: #A0D2EB;
+    --color-accent-green: #D0F4DE;
+    --color-accent-orange: #FFD6A5;
+
+    /* Header Specific Colors */
+    --color-header-bg: #FEC447;
+    --color-header-border: #DAA93F;
+    --color-btn-bg: #FAF3EB;
+    --color-btn-border: #111111;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-cream);
+    color: var(--color-dark);
+    font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-display);
+}
