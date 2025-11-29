@@ -2,21 +2,32 @@ import React from 'react';
 import { Button } from '../ui/Button';
 import { Section } from '../ui/Section';
 import heroImage from '../../assets/hero-image.png'; // Placeholder, need to move asset
+import arrow from "../../assets/arrow.svg"
+import welcometopimage from "../../assets/welcome-top-image.svg"
 
 export const Hero: React.FC = () => {
     return (
         <Section className="flex flex-col-reverse md:flex-row items-center justify-between gap-12 pt-12 pb-24">
             {/* Left Content */}
             <div className="flex-1 space-y-6">
-                <p className="text-blue-600 font-medium tracking-wide">
-                    Welcome to Diyalee, here to simplify design
-                </p>
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight">
-                    DESIGNING FOR <br />
-                    GROWTH.
-                </h1>
-                <p className="text-gray-600 text-lg max-w-md leading-relaxed">
-                    Currently serving as a Product Designer with 7 years of experience designing mobile and web UI, mobile apps, and website design systems to create intuitive, user-focused experiences.
+                <div className='relative'>
+                    <p className="text-blue-600 font-medium tracking-wide">
+                        Welcome! I'm Diyalee, here to simplify design
+                    </p>
+                    <img src={welcometopimage} className="absolute h-12 -top-[28px] -left-[35px]" alt="Welcome Top Image" />
+                </div>
+                <div className='relative'>
+
+                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight">
+                        DESIGNING FOR <br />
+                        GROWTH.
+                    </h1>
+                    <img src={arrow} className="h-20 absolute -bottom-[21px] right-[25%]" alt="Arrow" />
+                </div>
+                <p className="text-gray-600 text-lg leading-relaxed">
+                    Currently working as a <b>Product Designer</b> with 4 years of experience
+                    designing end-to-end product modules, workflows, and scalable
+                    design systems to create intuitive, user-focused experiences.
                 </p>
                 <Button variant="primary">
                     Get in touch
