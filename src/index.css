@@ -1,35 +1,40 @@
 @import "tailwindcss";
 
 @theme {
-    --font-display: "Red Hat Display", sans-serif;
-    --font-body: "Raleway", sans-serif;
+  --font-display: "Red Hat Display", sans-serif;
+  --font-body-1: "Raleway", sans-serif;
 
-    --color-cream: #FFF9E5;
-    --color-yellow: #FDC435;
-    --color-yellow-hover: #E5B02A;
-    --color-dark: #111111;
-    --color-gray: #828282;
+  --color-cream: #FFF9E5;
+  --color-yellow: #FDC435;
+  --color-yellow-hover: #E5B02A;
+  --color-dark: #111111;
+  --color-gray: #828282;
+  --color-primary: #F9F5F2;
+  --color-accent-purple: #E7A5E5;
+  --color-accent-blue: #A0D2EB;
+  --color-accent-green: #D0F4DE;
+  --color-accent-orange: #FFD6A5;
 
-    --color-accent-purple: #E7A5E5;
-    --color-accent-blue: #A0D2EB;
-    --color-accent-green: #D0F4DE;
-    --color-accent-orange: #FFD6A5;
-
-    /* Header Specific Colors */
-    --color-header-bg: #FEC447;
-    --color-header-border: #DAA93F;
-    --color-btn-bg: #FAF3EB;
-    --color-btn-border: #111111;
+  /* Header Specific Colors */
+  --color-header-bg: #FEC447;
+  --color-header-border: #DAA93F;
+  --color-btn-bg: #FAF3EB;
+  --color-btn-border: #111111;
+  --color-secondary: #FAF3E1;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--color-cream);
-    color: var(--color-dark);
-    font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-dark);
+  font-family: var(--font-body-1);
+}
+
+p {
+  font-family: var(--font-body-1);
 }
 
 h1,
@@ -38,5 +43,19 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-display);
+  font-family: var(--font-display);
+}
+
+.blurred-ellipse {
+  width: 150px;
+  height: 150px;
+  /* Different width/height creates an ellipse */
+  background-color: rgba(249, 179, 92, 0.5);
+  /* Partially transparent white background */
+  border-radius: 50%;
+  /* This makes the div an ellipse/circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: blur(60px);
 }

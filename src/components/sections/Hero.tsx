@@ -7,11 +7,22 @@ import welcometopimage from "../../assets/welcome-top-image.svg"
 
 export const Hero: React.FC = () => {
     return (
-        <Section className="flex flex-col-reverse md:flex-row items-center justify-between gap-12 pt-12 pb-24">
+        <Section className="flex h-[calc(100vh-70px)] flex-col-reverse md:flex-row items-center justify-between gap-12 pt-12 pb-24 bg-secondary overflow-hidden relative">
+            {/* Background - Radial Gradient */}
+            <div className="absolute top-0 left-0 right-0 flex justify-between">
+                <div className="blurred-ellipse">
+                </div>
+                <div className="blurred-ellipse">
+                </div>
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 flex justify-center">
+                <div className="blurred-ellipse">
+                </div>
+            </div>
             {/* Left Content */}
             <div className="flex-1 space-y-6">
                 <div className='relative'>
-                    <p className="text-blue-600 font-medium tracking-wide">
+                    <p className="text-blue-600 font-medium tracking-wide font-body-1">
                         Welcome! I'm Diyalee, here to simplify design
                     </p>
                     <img src={welcometopimage} className="absolute h-12 -top-[28px] -left-[35px]" alt="Welcome Top Image" />

@@ -8,7 +8,7 @@ import { Contact } from './components/sections/Contact';
 
 function App() {
   return (
-    <div className="min-h-screen bg-cream font-sans text-dark overflow-x-hidden">
+    <div className="min-h-screen bg-primary font-sans text-dark overflow-x-hidden">
       <Header />
       <main>
         <Hero />
