@@ -11,7 +11,7 @@ export const Button: React.FC<ButtonProps> = ({
     className = '',
     ...props
 }) => {
-    const baseStyles = "h-12 px-6 rounded-2xl font-body font-bold transition-colors cursor-pointer inline-block border-t-[0.5px] border-l-[0.5px] border-b-[3px] border-r-[3px] text-center";
+    const baseStyles = "font-body-1 py-3 px-6 rounded-2xl font-body font-bold transition-colors cursor-pointer inline-block border-t-[0.5px] border-l-[0.5px] border-b-[3px] border-r-[3px] text-center";
 
     const variants = {
         primary: "bg-[#FEC447] text-dark border-dark hover:bg-[#e5b02a]",

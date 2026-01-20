@@ -1,6 +1,7 @@
 import React from 'react';
 import { Section } from '../ui/Section';
 import { PenTool, Layout, Palette } from 'lucide-react';
+import Idea from "#src/assets/idea.svg"
 
 const ServiceCard: React.FC<{
     title: string;
@@ -8,7 +9,7 @@ const ServiceCard: React.FC<{
     icon: React.ReactNode;
     iconBg: string;
 }> = ({ title, description, icon, iconBg }) => (
-    <div className="bg-cream border border-gray-200 rounded-3xl p-8 hover:shadow-lg transition-shadow flex flex-col gap-6">
+    <div className="bg-service-card/50 border border-gray-200 rounded-3xl p-8 hover:shadow-lg transition-shadow flex flex-col gap-6">
         <div className={`w-16 h-16 rounded-full flex items-center justify-center ${iconBg}`}>
             {icon}
         </div>
@@ -21,14 +22,14 @@ const ServiceCard: React.FC<{
 
 export const Services: React.FC = () => {
     return (
-        <Section className="py-24" id="services">
+        <Section className="py-32 flex flex-col gap-16" id="services">
             <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold mb-4 flex items-center justify-center gap-2">
+                <h2 className="text-5xl font-bold mb-4 flex items-center justify-center gap-2">
                     What I can do for you
-                    <span className="text-yellow-400 text-3xl">💡</span>
+                    <img src={Idea} className='h-16' />
                 </h2>
-                <p className="text-gray-600 max-w-2xl mx-auto">
-                    From powerful UI/UX design to clear branding and effective project management, I provide solutions that drive success.
+                <p className="text-gray-600 max-w-2xl mx-auto text-xl">
+                    From impactful UI/UX design to cohesive branding and effective project management, I provide solutions that drive success.
                 </p>
             </div>
 

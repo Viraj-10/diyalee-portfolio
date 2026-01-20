@@ -15,7 +15,7 @@ export const Hero: React.FC = () => {
                 <div className="blurred-ellipse">
                 </div>
             </div>
-            <div className="absolute bottom-0 left-0 right-0 flex justify-center">
+            <div className="pointer-events-none absolute bottom-0 left-0 right-0 flex justify-center">
                 <div className="blurred-ellipse">
                 </div>
             </div>
@@ -40,7 +40,7 @@ export const Hero: React.FC = () => {
                     designing end-to-end product modules, workflows, and scalable
                     design systems to create intuitive, user-focused experiences.
                 </p>
-                <Button variant="primary">
+                <Button variant="primary" className='py-5! px-12 justify-center text-lg font-semibold'>
                     Get in touch
                 </Button>
             </div>
