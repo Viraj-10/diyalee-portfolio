@@ -6,15 +6,53 @@
 
   --color-cream: #FFF9E5;
   --color-yellow: #FDC435;
+  --color-yellow-100: ##FAF3E1;
   --color-service-card: #F9B35C;
   --color-yellow-hover: #E5B02A;
-  --color-dark: #111111;
+
   --color-gray: #828282;
   --color-primary: #F9F5F2;
   --color-accent-purple: #E7A5E5;
   --color-accent-blue: #A0D2EB;
   --color-accent-green: #D0F4DE;
   --color-accent-orange: #FFD6A5;
+
+
+
+  /* Primary Colors */
+  --color-primary-50: #F9F5F2;
+  --color-primary-100: #FAF3E1;
+  --color-primary-200: #FFE9B9;
+  --color-primary-300: ##FEC447;
+
+  /* Secondary Colors */
+  --color-secondary-50: #DDE5FF;
+  --color-secondary-100: #C1D3FF;
+  --color-secondary-200: #AEC5FF;
+  --color-secondary-300: #92A8ED;
+  --color-secondary-400: #5373D8;
+  --color-secondary-500: #647ABF;
+
+  /* Pink Colors */
+  --color-pink-50: #FCDFF2;
+  --color-pink-100: #FFC7F3;
+  --color-pink-200: #FFB5EF;
+  --color-pink-300: #FD91E6;
+
+
+  /* Green Colors */
+  --color-green-50: #C5EDEA;
+  --color-green-100: #8ECAC2;
+  --color-green-200: #5FD1C6;
+  --color-green-300: #0A7373;
+
+
+  /* Orange Colors */
+  --color-orange-50: #FFD5A5;
+  --color-orange-100: #FECCB5;
+
+  /* Base Colors */
+  --color-dark: #111111;
 
   /* Header Specific Colors */
   --color-header-bg: #FEC447;
@@ -25,6 +63,7 @@
 
 
   --spacing-4\.5: 1.125rem;
+  --spacing-30: 7.5rem
 }
 
 html {
@@ -62,4 +101,29 @@ h6 {
   justify-content: center;
   align-items: center;
   filter: blur(60px);
+}
+
+.glow-blob {
+  width: var(--w);
+  height: var(--h);
+
+  background: var(--color);
+  border-radius: 50%;
+  filter: blur(var(--blur));
+
+  pointer-events: none;
+}
+
+.glow-ellipse-30 {
+  --w: 200px;
+  --h: 210px;
+  --blur: 180px;
+  --color: rgba(249, 179, 92, 0.6);
+}
+
+.glow-ellipse-31 {
+  --w: 260px;
+  --h: 260px;
+  --blur: 200px;
+  --color: rgba(250, 243, 225, 0.7);
 }
