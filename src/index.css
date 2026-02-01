@@ -23,7 +23,7 @@
   --color-primary-50: #F9F5F2;
   --color-primary-100: #FAF3E1;
   --color-primary-200: #FFE9B9;
-  --color-primary-300: ##FEC447;
+  --color-primary-300: #FEC447;
 
   /* Secondary Colors */
   --color-secondary-50: #DDE5FF;
@@ -44,7 +44,8 @@
   --color-green-50: #C5EDEA;
   --color-green-100: #8ECAC2;
   --color-green-200: #5FD1C6;
-  --color-green-300: #0A7373;
+  --color-green-300: #239F93;
+  --color-green-400: #0A7373;
 
 
   /* Orange Colors */
@@ -57,8 +58,11 @@
   /* Header Specific Colors */
   --color-header-bg: #FEC447;
   --color-header-border: #DAA93F;
+
+
   --color-btn-bg: #FAF3EB;
   --color-btn-border: #111111;
+  --color-dotted-border:#594A27;
   --color-secondary: #FAF3E1;
 
 
