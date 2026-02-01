@@ -36,11 +36,9 @@ export const Hero: React.FC = () => {
                     <img src={arrow} className="h-20 absolute -bottom-[21px] right-[25%]" alt="Arrow" />
                 </div>
                 <p className="text-gray-600 text-lg leading-relaxed">
-                    Currently working as a <b>Product Designer</b> with 4 years of experience
-                    designing end-to-end product modules, workflows, and scalable
-                    design systems to create intuitive, user-focused experiences.
+                    Currently working as a <span className="font-semibold text-dark">Product Designer</span> with <span className="font-semibold text-dark">4+ years</span> of experience designing end-to-end product modules, workflows, and scalable design systems to create intuitive, user-focused experiences.
                 </p>
-                <Button variant="primary" className='py-5! px-12 justify-center text-lg font-semibold'>
+                <Button variant="primary" className='justify-center text-lg font-semibold'>
                     Get in touch
                 </Button>
             </div>
@@ -56,8 +54,7 @@ export const Hero: React.FC = () => {
                     <img
                         src={heroImage}
                         alt="Diyalee - Product Designer"
-                        className="max-w-full h-auto object-contain relative z-10"
-                        style={{ maxHeight: '500px' }}
+                        className="w-auto h-[560px] object-contain relative z-10"
                     />
                 </div>
             </div>

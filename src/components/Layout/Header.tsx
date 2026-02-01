@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from '../ui/Button';
 import headerIcon from '../../assets/header-icon.png';
 
 export const Header: React.FC = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const navLinks = [
         { name: 'Services', href: '#services' },
@@ -31,37 +30,10 @@ export const Header: React.FC = () => {
                         {link.name}
                     </a>
                 ))}
-                <Button variant="outline" className="w-full text-[16px] font-semibold">
+                <Button variant="outline" size='sm' className="text-base">
                     Connect Now
                 </Button>
             </nav>
-
-            {/* Mobile Menu Button */}
-            <button
-                className="md:hidden text-2xl text-dark"
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-                ☰
-            </button>
-
-            {/* Mobile Nav */}
-            {isMenuOpen && (
-                <div className="absolute top-full left-0 w-full bg-header-bg shadow-lg p-6 flex flex-col gap-4 md:hidden rounded-b-3xl border-t border-header-border">
-                    {navLinks.map((link) => (
-                        <a
-                            key={link.name}
-                            href={link.href}
-                            className="font-display font-normal text-[16px] text-dark"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            {link.name}
-                        </a>
-                    ))}
-                    <Button variant="outline" className="w-full text-[20px] font-semibold">
-                        Connect Now
-                    </Button>
-                </div>
-            )}
         </header>
     );
 };
