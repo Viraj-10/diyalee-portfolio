@@ -12,6 +12,7 @@ const ProjectCard = ({
   image,
   imageBackground,
   index,
+  link,
 }: Project & { index: number }) => {
   const isEven = index % 2 === 0;
 
@@ -36,7 +37,13 @@ const ProjectCard = ({
         <h3 className="text-4xl font-bold mb-4.5">{title}</h3>
         <p className="text-lg leading-relaxed mb-3">{description1}</p>
         <p className="text-lg leading-relaxed">{description2}</p>
-        <Button variant="outline" className="mt-8">
+        <Button
+          variant="outline"
+          className="mt-8"
+          onClick={() => {
+            window.open(link);
+          }}
+        >
           See Website
         </Button>
       </div>
@@ -56,14 +63,13 @@ const ProjectCard = ({
   );
 };
 
-export const Projects: React.FC = () => {
+export const Projects = () => {
   return (
     <Section className="py-24 mt-30 flex flex-col" id="projects">
       <div className="text-center mb-11">
         <h2 className="text-5xl font-bold mb-4.5">Featured Projects</h2>
         <p className="whitespace-break-spaces">{PROJECTS_DESCRIPTION}</p>
       </div>
-
       <div>
         {PROJECTS.map((project, index) => (
           <ProjectCard key={project.title} {...project} index={index} />

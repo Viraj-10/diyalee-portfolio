@@ -9,7 +9,7 @@ import { ExperienceContainer } from "#src/components/ui/Experince";
 export const About: React.FC = () => {
   return (
     <Section id="about">
-      <div className="flex flex-col lg:flex-row gap-16 bg-primary-100 pl-15 rounded-3xl max-h-[600px]">
+      <div className="flex flex-col lg:flex-row gap-16 bg-primary-100 pl-15 pr-12 rounded-3xl max-h-[600px]">
         {/* Left: About Me */}
         <div className="flex-1 grow-25 relative h-fit mt-16">
           <div className="flex mb-8 gap-3 items-baseline">
