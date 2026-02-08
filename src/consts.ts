@@ -1,3 +1,4 @@
+import betterhood from "#src/assets/project-1.png";
 export const SERVICES = [
   {
     title: "Product Design & System Thinking",
@@ -56,3 +57,22 @@ export const EXPERIENCES = [
       "End-to-end responsibility from conceptualisation and design to site execution across projects of varied scales.",
   },
 ];
+
+export const PROJECTS_DESCRIPTION =
+  "Explore my featured projects that highlight my blend of UI/UX design and project management, \n reflecting a commitment to user-centric solutions across diverse industries";
+export const PROJECTS = [
+  {
+    tags: ["Web design", "Health Assessment Website"],
+    tagsColor: ["bg-pink-50", "bg-blue-50"],
+    title: "Betterhood",
+    description1:
+      "Betterhood is a diagnostic and recommendation platform focused on pain management for back, neck, shoulder, and knee conditions.",
+    description2:
+      "I designed and managed its user-centric website, integrating multi-level assessments that provide tailored product recommendations. The fresh, engaging design ensures an intuitive experience, encouraging user interaction and trust.",
+    image: betterhood,
+    link: "https://google.com",
+    imageBackground: "bg-pink-50",
+  },
+];
+
+export type Project = (typeof PROJECTS)[0];
